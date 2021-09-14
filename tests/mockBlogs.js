@@ -1,4 +1,4 @@
-const blogs = [
+const mockBlogs = [
     {
         _id: '5a422a851b54a676234d17f7',
         title: 'React patterns',
@@ -70,7 +70,7 @@ const mostLikedBlog = {
 }
 
 module.exports = {
-    blogs,
+    mockBlogs,
     listWithOneBlog,
     mostLikedBlog
 }
