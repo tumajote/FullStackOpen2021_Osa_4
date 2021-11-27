@@ -20,7 +20,7 @@ describe('total likes', () => {
     })
 
     test('of a bigger list is calculated right', () => {
-        const result = listHelper.totalLikes(mockBlogs.blogs)
+        const result = listHelper.totalLikes(mockBlogs.allBlogs)
         expect(result).toBe(36)
     })
 })
@@ -32,11 +32,7 @@ describe('most liked blog', () => {
         expect(result).toEqual({})
     })
     test('of the list is chosen correctly', () => {
-        const result = listHelper.favoriteBlog(mockBlogs.blogs)
+        const result = listHelper.favoriteBlog(mockBlogs.allBlogs)
         expect(result).toEqual(mockBlogs.mostLikedBlog)
     })
-})
-
-afterAll(async () => {
-    await mongoose.connection.close()
 })

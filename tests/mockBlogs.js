@@ -1,4 +1,4 @@
-const mockBlogs = [
+const allBlogs = [
     {
         _id: '5a422a851b54a676234d17f7',
         title: 'React patterns',
@@ -69,8 +69,38 @@ const mostLikedBlog = {
     __v: 0,
 }
 
-module.exports = {
-    mockBlogs,
-    listWithOneBlog,
-    mostLikedBlog
+const blogWithoutLikes = {
+    _id: '5a422b3a1b54a676234d17f9',
+    title: 'Canonical string reduction',
+    author: 'Edsger W. Dijkstra',
+    url: 'http://www.cs.utexas.edu/~EWD/transcriptions/EWD08xx/EWD808.html',
+    __v: 0,
 }
+
+const blogsWithoutFields = [
+    {
+        _id: '5a422a851b54a676234d17f7',
+        author: 'Michael Chan',
+        url: 'https://reactpatterns.com/',
+        likes: 7,
+        __v: 0,
+    },
+    {
+        _id: '5a422aa71b54a676234d17f8',
+        title: 'Go To Statement Considered Harmful',
+        author: 'Edsger W. Dijkstra',
+        likes: 5,
+        __v: 0,
+    },
+]
+
+
+
+module.exports = {
+    allBlogs,
+    listWithOneBlog,
+    mostLikedBlog,
+    blogWithoutLikes,
+    blogsWithoutFields
+}
+
