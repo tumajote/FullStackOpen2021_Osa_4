@@ -26,7 +26,6 @@ test('notes are returned as json', async () => {
 
 test('correct amount of blogs is returned', async () => {
     const response = await api.get('/api/blogs')
-    console.log(response.body)
     expect(response.body).toHaveLength(1)
 })
 
